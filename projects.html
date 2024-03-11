@@ -55,42 +55,105 @@
             <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
           </div>
         </nav>
-      </div></header>
-    <section class="u-clearfix u-section-1" id="carousel_607d">
-      <div class="u-clearfix u-sheet u-valign-middle-lg u-valign-middle-md u-valign-middle-xl u-sheet-1">
-        <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
-          <div class="u-layout">
-            <div class="u-layout-row">
-              <div class="u-container-style u-layout-cell u-left-cell u-size-30 u-layout-cell-1">
-                <div class="u-container-layout u-container-layout-1">
-                  <div class="u-palette-4-base u-shape u-shape-circle u-shape-1"></div>
-                  <div alt="" class="u-image u-image-circle u-image-1" data-image-width="2208" data-image-height="1242"></div>
-                  <div class="u-shape u-shape-svg u-text-palette-4-base u-shape-2">
-                    <svg class="u-svg-link" preserveAspectRatio="none" viewBox="0 0 160 50" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-7f47"></use></svg>
-                    <svg class="u-svg-content" viewBox="0 0 160 50" x="0px" y="0px" id="svg-7f47" style="enable-background:new 0 0 160 50;"><path d="M133,26.7c-13.9,9.7-25.8,9.7-39.8,0c-9.1-6.3-16.8-6.3-25.9,0c-13.8,9.6-25.1,9.6-38.9,0c-9.2-6.4-15.4-6.4-24.6,0L0,22
-	c11.2-7.8,20.6-8.1,32.2,0c11,7.6,19,8.5,31.3,0c11.6-8.1,22.4-7.7,33.5,0c11.4,8,20.3,8.3,32.2,0c11.6-8.1,19.2-8.1,30.8,0
-	l-3.8,4.7C146.9,20.2,142.3,20.2,133,26.7z M133,10.8c-13.9,9.7-25.8,9.7-39.8,0c-9.1-6.3-16.8-6.3-25.9,0
-	c-13.8,9.6-25.1,9.6-38.9,0c-9.2-6.4-15.4-6.4-24.6,0L0,6.1c11.2-7.8,20.6-8.1,32.2,0c11,7.6,19,8.5,31.3,0C75.1-2,85.9-1.6,97,6.1
-	c11.4,8,20.3,8.3,32.2,0C140.8-2,148.4-2,160,6.1l-3.8,4.7C146.9,4.3,142.3,4.3,133,10.8z M32.2,38c11,7.6,19,8.5,31.3,0
-	c11.6-8.1,22.4-7.7,33.5,0c11.4,8,20.3,8.3,32.2,0c11.6-8.1,19.2-8.1,30.8,0l-3.8,4.7c-9.3-6.5-13.9-6.5-23.3,0
-	c-13.9,9.7-25.8,9.7-39.8,0c-9.1-6.3-16.8-6.3-25.9,0c-13.8,9.6-25.1,9.6-38.9,0c-9.2-6.4-15.4-6.4-24.6,0L0,38
-	C11.2,30.2,20.6,29.9,32.2,38z"></path></svg>
-                  </div>
-                </div>
-              </div>
-              <div class="u-container-style u-layout-cell u-right-cell u-size-30 u-layout-cell-2">
-                <div class="u-container-layout u-container-layout-2">
-                  <h1 class="u-text u-text-1">Yumna Anwar</h1>
-                  <p class="u-text u-text-grey-50 u-text-2"> I am a PhD. student in the&nbsp;<a href="http://www.cs.uiowa.edu/" target="_blank" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1">Department of Computer Science</a>at&nbsp;The University of Iowa. I am being advised by&nbsp;Prof. Octav Chipara.&nbsp;
-                  </p>
-                  <a href="files/yumna-resume.pdf" class="u-active-palette-1-dark-2 u-btn u-btn-rectangle u-button-style u-custom-font u-file-link u-font-pt-sans u-hover-palette-1-dark-2 u-palette-1-dark-3 u-radius-0 u-btn-2">Resume</a>
-                  <a href="https://www.linkedin.com/in/yumna-anwar-aa6637118/" class="u-active-palette-1-dark-2 u-btn u-btn-rectangle u-button-style u-custom-font u-font-pt-sans u-hover-palette-1-dark-2 u-palette-1-dark-3 u-radius-0 u-btn-3">linkedin</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
+
+      <style>
+              body {
+                  font-family: 'Roboto', sans-serif;
+                  margin: 0;
+                  padding: 0;
+                  background-color: #f9f9f9;
+                  color: #333;
+              }
+              .container {
+                  max-width: 1200px;
+                  margin: 40px auto;
+                  padding: 0 20px;
+              }
+              h1 {
+                  text-align: center;
+                  margin-bottom: 50px;
+                  font-size: 2.5em;
+                  color: #2c3e50;
+              }
+              .card {
+                  display: flex;
+                  flex-wrap: wrap;
+                  justify-content: space-between;
+                  margin-bottom: 30px;
+                  background: #fff;
+                  border-radius: 8px;
+                  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                  overflow: hidden;
+              }
+              .card img {
+                  width: 100%;
+                  height: auto;
+                  object-fit: cover;
+              }
+              .card-content {
+                  flex: 1;
+                  padding: 20px;
+              }
+              .card h2 {
+                  margin-top: 0;
+                  font-size: 1.75em;
+                  color: #34495e;
+              }
+              .card p {
+                  font-size: 1em;
+                  line-height: 1.6;
+                  margin-bottom: 20px;
+              }
+              .card-link {
+                  display: inline-block;
+                  background: #3498db;
+                  color: #fff;
+                  padding: 10px 15px;
+                  border-radius: 5px;
+                  transition: background 0.3s ease;
+                  text-decoration: none;
+              }
+              .card-link:hover {
+                  background: #2980b9;
+              }
+              @media (max-width: 768px) {
+                  .card {
+                      flex-direction: column;
+                  }
+              }
+          </style>
+    </header>
+
+
+    <section class="u-clearfix u-section-1" id="carousel_607d">
+      <div class="container">
+        <h1>My Projects</h1>
+
+        <!-- Project 1 -->
+        <div class="card">
+            <img src="images/cough-1.jpeg" alt="Project 1 Image" style="width: 50%;">
+            
+            <div class="card-content">
+                <h2>Audio-Based Cough Detection in Clinic Waiting Rooms</h2>
+                <p>Description of Project 1. This project focuses on...</p>
+                <a href="https://scholar.google.com/..." class="card-link">Read more on Google Scholar</a>
+            </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="card">
+            <img src="link_to_project_2_image.jpg" alt="Project 2 Image" style="width: 50%;">
+            <div class="card-content">
+                <h2>Project 2 Title</h2>
+                <p>Description of Project 2. The main objective of this project is...</p>
+                <a href="https://scholar.google.com/..." class="card-link">Read more on Google Scholar</a>
+            </div>
+        </div>
+
+        <!-- Add more projects here -->
+
+    </div>
     </section>
 
 
