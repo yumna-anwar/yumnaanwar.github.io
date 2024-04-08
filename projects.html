@@ -13,6 +13,23 @@
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
     <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i">
 
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Select the link by its ID
+      var readMoreLink = document.getElementById('readMoreLink');
+
+      // Add a click event listener to the link
+      readMoreLink.addEventListener('click', function(event) {
+          // Prevent the default link action (navigation)
+          event.preventDefault();
+
+          // Show a "Coming Soon" message
+          alert('Coming Soon on Google Scholar');
+
+          // If you have a custom modal/pop-up, you can show it here instead of the alert
+      });
+    });
+    </script>
 
     <script type="application/ld+json">{
 		"@context": "http://schema.org",
@@ -128,7 +145,19 @@
 
     <section class="u-clearfix u-section-1" id="carousel_607d">
       <div class="container">
-        <h1>My Projects</h1>
+
+        <!-- Project 0 -->
+        <div class="card">
+            <img src="images/latency_tolerance.png" alt="Project 1 Image" style="width: 50%;">
+
+            <div class="card-content">
+                <h2>Deep Neural Networks for Speech Enhancement on Resource-Constrained Devices</h2>
+                <p>Design, train, optimize and deploy deep neural network models in pytorch and tensorflow for noise suppression with low latency for embedded devices (hearing aid
+devices)</p>
+          <a href="#" id="readMoreLink" class="card-link">Read more on Google Scholar</a>
+
+            </div>
+        </div>
 
         <!-- Project 1 -->
         <div class="card">
@@ -136,18 +165,21 @@
 
             <div class="card-content">
                 <h2>Audio-Based Cough Detection in Clinic Waiting Rooms</h2>
-                <p>Description of Project 1. This project focuses on...</p>
-                <a href="https://scholar.google.com/..." class="card-link">Read more on Google Scholar</a>
+                <p>Cough detector for clinic waiting rooms using deep learning techniques using tensorflow to identify coughs sounds and estimates
+the number of patients who report cough as a symptom during their clinic visit
+as a surveillance tool for respiratory disease outbreak.</p>
+                <a href="https://ieeexplore.ieee.org/abstract/document/9874700" class="card-link">Read more on Google Scholar</a>
             </div>
         </div>
 
         <!-- Project 2 -->
         <div class="card">
-            <img src="link_to_project_2_image.jpg" alt="Project 2 Image" style="width: 50%;">
+            <img src="images/pairwise_HA_study.jpeg" alt="Project 2 Image" style="width: 50%;">
             <div class="card-content">
-                <h2>Project 2 Title</h2>
-                <p>Description of Project 2. The main objective of this project is...</p>
-                <a href="https://scholar.google.com/..." class="card-link">Read more on Google Scholar</a>
+                <h2>Personalizing over-the-counter hearing aids using pairwise comparisons</h2>
+                <p>Developed optimization technique of hearing aid configurations based on patients’
+feedback and multi-arm bandit algorithms</p>
+                <a href="https://www.sciencedirect.com/science/article/pii/S2352648321000507" class="card-link">Read more on Google Scholar</a>
             </div>
         </div>
 
